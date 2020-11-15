@@ -1,16 +1,22 @@
+// ___PACKAGENAME___
+// Created by ___FULLUSERNAME___ on ___DATE___.
+// Copyright © ___YEAR___ ___ORGANIZATIONNAME___. All rights reserved.</string>
+
 import UIKit
 
 protocol ___VARIABLE_MODULENAME___ViewProtocol: ___VARIABLE_MODULENAME___Protocol {
     
 }
 
+// MARK: - View
 final class ___VARIABLE_MODULENAME___View: UIView {
-    private let presenter: ___VARIABLE_MODULENAME___PresenterProtocol
+    private let presenter: ___VARIABLE_MODULENAME___Presenter
 
-    init(presenter: ___VARIABLE_MODULENAME___PresenterProtocol) {
+    // MARK: - Init
+    init(presenter: ___VARIABLE_MODULENAME___Presenter) {
         self.presenter = presenter
         super.init(frame: .zero)
-        setupView()
+        self.setupView()
         presenter.didReceiveEvent(.viewDidInit)
     }
 
@@ -29,10 +35,10 @@ extension ___VARIABLE_MODULENAME___View: ___VARIABLE_MODULENAME___Protocol {
 
 extension ___VARIABLE_MODULENAME___View {
   	private func setupView() {
-        setColors()
+        self.setColors()
   	}
 
   	private func setColors() {
-        backgroundColor = .white
+        self.backgroundColor = .white
   	}
 }

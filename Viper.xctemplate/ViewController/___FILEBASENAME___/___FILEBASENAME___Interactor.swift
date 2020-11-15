@@ -1,6 +1,4 @@
-// ___PACKAGENAME___
-// Created by ___FULLUSERNAME___ on ___DATE___.
-// Copyright © ___YEAR___ ___ORGANIZATIONNAME___. All rights reserved.</string>
+// ___FILEHEADER___
 
 import Foundation
 
@@ -27,9 +25,6 @@ final class ___VARIABLE_MODULENAME___InteractorImpl: ___VARIABLE_MODULENAME___In
     init(networkService: NetworkService) {
         _networkService = networkService
     }
-}
 
-// MARK: - ___VARIABLE_MODULENAME___InteractorOutput
-extension ___VARIABLE_MODULENAME___InteractorImpl: ___VARIABLE_MODULENAME___InteractorOutput {
-
+    // MARK: - Interactor
 }
